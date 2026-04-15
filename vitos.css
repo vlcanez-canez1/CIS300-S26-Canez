@@ -1,39 +1,41 @@
 * { box-sizing: border-box; }
+
 :root {
     --text: #3f322d;
     --background: #ffffff;
     --primary: #da643d;
     --secondary: #6e9223;
     --accent: #eedbc9;}
-    
+
 body {
     background-color: var(--accent);
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;}
+
 #wrapper {
     background-color: var(--background);}
+
 header {
     background-color: var(--primary);
     color: #FFFFFF;
     text-align: center;}
-.tagline {
-    font-style: italic;
-    margin-top: -0.5em;
-    margin-bottom: 1.5em;
-    color: var(--secondary);}
+
 nav {
     text-align: center;
     padding: 0;
     font-weight: bold;
     font-size: 120%;}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding-left: 0;
     font-size: 1.2em;}
+
 nav li {
     border-bottom: 1px solid var(--background);}
+
 nav a {
     text-decoration: none;
     display: block;
@@ -48,6 +50,15 @@ main {
     padding-bottom: 20px;
     padding-left: 30px;
     overflow: auto;}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 2em;
+    background-color: var(--background);}
+
 h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -56,75 +67,54 @@ h1 {
     letter-spacing: 0.15em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;}
+
 h2 {
     font-family: Georgia, "Times New Roman", serif;
     color: var(--primary);}
+
 h3 {
     font-family: Georgia, "Times New Roman", serif;
     color: var(--secondary);}
-footer {
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
-    padding: 2em;
-    background-color: var(--background);}
-.restaurant {
-    color: var(--primary);
-    font-weight: bold;}
-.dish {
-    color: var(--secondary);
-    font-weight: bold;}
-#contact {
-    font-size: 90%;
-    margin-top: 2em;}
-
-#homehero {
-    height: 300px;
-    background-image: url(hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;}
-.boxphoto {
-    height: 180px;
-    background-image: url(featured-dish.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid var(--secondary);}
-.smallphoto {
-    height: 120px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid var(--secondary);}
-#fettuccine {
-    background-image: url(fettuccine.jpg);}
-#ziti {
-    background-image: url(ziti.jpg);}
-#pizza {
-    background-image: url(pizza.jpg);}
 
 header a:link {
     text-decoration: none;
     color: #FFFFFF;}
+
 header a:visited {
     text-decoration: none;
     color: #FFFFFF;}
+
 header a:hover {
     text-decoration: none;
     color: var(--accent);}
 
 nav a:link {
     color: var(--text);}
+
 nav a:visited {
     color: var(--text);}
+
 nav a:hover {
     color: var(--primary);
     background-color: var(--accent);}
 
+.tagline {
+    font-style: italic;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+    color: var(--secondary);}
+
+.restaurant {
+    color: var(--primary);
+    font-weight: bold;}
+
+.dish {
+    color: var(--secondary);
+    font-weight: bold;}
+
 section {
     margin-bottom: 2em;}
+
 .button {
     background-color: var(--primary);
     color: #FFFFFF;
@@ -132,15 +122,94 @@ section {
     padding: 0.5em 1em;
     display: inline-block;
     font-weight: bold;}
+
 .button:hover {
     background-color: var(--secondary);}
+
+#contact {
+    font-size: 90%;
+    margin-top: 2em;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 35em;}
+
+label {
+    margin-top: 1em;
+    font-weight: bold;}
+
+input, select, textarea {
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--text);}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;}
+
+input[type="submit"] {
+    width: 9em;
+    margin-top: 1em;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary);}
+
+#homehero {
+    height: 300px;
+    background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;}
+
+.aboutphoto {
+    height: 300px;
+    background-image: url(crew.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--secondary);
+    margin-bottom: 1em;}
+
+.boxphoto {
+    height: 180px;
+    background-image: url(featured-dish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--secondary);}
+
+.smallphoto {
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--secondary);}
+
+#fettuccine {
+    background-image: url(fettuccine.jpg);}
+
+#ziti {
+    background-image: url(ziti.jpg);}
+
+#pizza {
+    background-image: url(pizza.jpg);}
+
 .dishgroup {
     display: block;}
+
 .dishcard {
     margin-bottom: 1.5em;}
 
 #columns {
     display: block;}
+
 #leftcolumn, #rightcolumn {
     width: 100%;}
 
