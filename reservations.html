@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vito's Italian Bistro:: Reservations</title>
+<link rel="stylesheet" href="vitos.css">
+<meta charset="utf-8">
+<meta name="description" content="Request a reservation at Vito's Italian Bistro for lunch, dinner, or special occasions.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <h1><a href="index.html">Vito's Italian Bistro</a></h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<h2>Reservations at Vito's Italian Bistro</h2>
+<p class="tagline">Reserve your table for lunch, dinner, and special occasions.</p>
+
+<section>
+<h3>Request a Reservation</h3>
+<p>Please complete the form below to request a table. This form allows guests to provide their contact information, preferred reservation details, and any special requests they may have for their visit.</p>
+<p>Required fields are marked with an asterisk *</p>
+
+<form method="post" action="#">
+    <label for="myFName">*First Name:</label>
+    <input type="text" name="myFName" id="myFName" required>
+
+    <label for="myLName">*Last Name:</label>
+    <input type="text" name="myLName" id="myLName" required>
+
+    <label for="myEmail">*E-mail:</label>
+    <input type="email" name="myEmail" id="myEmail" required>
+
+    <label for="myPhone">*Phone Number:</label>
+    <input type="tel" name="myPhone" id="myPhone" required>
+
+    <label for="myDate">*Reservation Date:</label>
+    <input type="date" name="myDate" id="myDate" required>
+
+    <label for="myTime">*Reservation Time:</label>
+    <input type="time" name="myTime" id="myTime" required>
+
+    <label for="myGuests">*Number of Guests:</label>
+    <select name="myGuests" id="myGuests" required>
+        <option value="">Select</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6">6 Guests</option>
+        <option value="7+">7 or More Guests</option>
+    </select>
+
+    <label for="myComments">Special Requests:</label>
+    <textarea name="myComments" id="myComments"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+</section>
+
+<div id="contact">
+<span class="restaurant">Vito's Italian Bistro</span><br>
+1234 West Lane Street<br>
+Phoenix, AZ 85001<br><br>
+Mon-Fri: 11:00 AM - 10:00 PM<br>
+Sat-Sun: 11:00 AM - 11:00 PM<br><br>
+Phone: (602)-123-5467<br>
+Email: vitositalianbistro@example.com
+</div>
+
+</main>
+
+<footer>
+Copyright &copy; 2026 Vito's Italian Bistro<br>
+vitositalianbistro@example.com
+</footer>
+
+</div>
+
+</body>
+</html>
